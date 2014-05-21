@@ -22,17 +22,20 @@ public class Practice3 {
 
         meses omeses = new meses();
         elevarNumeros oelevarNumeros = new elevarNumeros();
-        
+        letraOpalabra oleOpalabra = new letraOpalabra();
+
         int opt = 0, numero;
         char continuar;
         boolean validar = true;
+        double num;
+        String valor = " ";
 
         do {
             // creamos un menu
             System.out.println("Digite la opcion a evaluar");
             System.out.println("1.saber el mes");
-            System.out.println("2.");
-            System.out.println("3.");
+            System.out.println("2.Eleva o multiplica");
+            System.out.println("3.Opciones");
             System.out.println("4.");
             System.out.println("5.");
             System.out.println("6.");
@@ -43,8 +46,17 @@ public class Practice3 {
                     System.out.println("Digite el mes en valor numerico");
                     numero = Integer.parseInt(teclado.nextLine());
                     omeses.calculames(numero);
+                    break;
 
                 case 2:
+                    System.out.println("Digite el valor del numero");
+                    num = Double.parseDouble(teclado.nextLine());
+                    oelevarNumeros.eleva(num);
+                    break;
+                case 3:
+                    System.out.println("Digite el valor  A=excelente B= bueno C= regular D= malo E= pésimo");
+                    valor=teclado.nextLine();
+                    oleOpalabra.cambiarPalabra(valor);
 
             }
 
