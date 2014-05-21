@@ -68,7 +68,7 @@ public class Ciclos {
          * entero ingresado por el usuario. No se pueden utilizar las funciones
          * matemáticas la idea es lograrlo mediante el uso del ciclo para.
          */
-        float num;
+        float num, operacion;
         int elv;
         int res;
 
@@ -77,13 +77,58 @@ public class Ciclos {
 
         System.out.println("Digite el numero como exponente");
         elv = Integer.parseInt(teclado.nextLine());
+        operacion = num;
 
-        for (int i = 0; i <= elv; i++) {
-            num = num * num;
+        for (int i = 1; i < elv; i++) {
+            operacion = operacion * num;
 
         }
         res = (int) num; // esto es para cambier el valor de la variable
         System.out.println("El resultado del calculo es de:" + res);
 
-    }
+        /**
+         * 1.	Construir un programa que imprima los números que se pueden
+         * generar de 5 dígitos con la combinación de los dígitos del 1 al 9
+         * ejemplo 11111, 11112, 11113, ... 99999
+         */
+        int nu = 11111;
+        while (nu <= 99999) {
+            nu++;
+
+            System.out.println(nu);
+        }
+
+        /**
+         * 1.	Ingresar N números enteros y reportar la cantidad de pares y la
+         * cantidad de impares.
+         */
+        int numero;
+        int contadorpa = 0;
+        int contadorIm = 0;
+        System.out.println("Digite un numero a cual llegar");
+        numero = Integer.parseInt(teclado.nextLine());
+        for (int i = 0; i <= numero; i++) {
+            if (i % 2 == 0) {
+                contadorpa = contadorpa + 1;
+            } else {
+                contadorIm = contadorIm + 1;
+            }
+
+        }
+        System.out.println("los numeros  PARES son" + contadorpa + "los numeros imprares son" + contadorIm);
+
+        /**
+         * 1.	Programa que lea un número n luego desplegar la tabla de
+         * multiplicar de ese número. Realizar el programa: a) utilizando for b)
+         * Utilizando while c) utilizando do while.
+         */
+        
+    
+    
+    
+    
+    
+    
+    
+    }// llaves del final
 }
