@@ -5,6 +5,8 @@
  */
 package practice.pkg3;
 
+import com.sun.org.apache.xml.internal.utils.CharKey;
+
 /**
  *
  * @author Campbell
@@ -16,20 +18,20 @@ public class letraOpalabra {
      * excelente B bueno C regular D malo E pésimo
      *
      */
-    public void cambiarPalabra(String valor) {
-        if (valor == "a" || valor == "A") {
+    public void cambiarPalabra(char valor) {
+        if (valor == 'a' || valor == 'A') {
             System.out.println("Excelente");
-        } else {
-            if (valor == "b" || valor == "B") {
+        }  {
+            if (valor == 'b' || valor == 'B') {
                 System.out.println("bueno");
-            } else {
-                if (valor == "c" || valor == "C") {
+            }  {
+                if (valor == 'c' || valor == 'C') {
                     System.out.println("Regular");
-                } else {
-                    if (valor == "d" || valor == "D") {
+                }  {
+                    if (valor == 'd' || valor == 'D') {
                         System.out.println("Malo");
-                    } else {
-                        if (valor == "e" || valor == "E") {
+                    } {
+                        if (valor == 'e' || valor == 'E') {
                             System.out.println("pésimo");
                         } 
                     }

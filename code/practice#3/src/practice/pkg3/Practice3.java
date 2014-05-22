@@ -25,10 +25,9 @@ public class Practice3 {
         letraOpalabra oleOpalabra = new letraOpalabra();
 
         int opt = 0, numero;
-        char continuar;
+        char continuar, valor;
         boolean validar = true;
         double num;
-        String valor = " ";
 
         do {
             // creamos un menu
@@ -55,8 +54,10 @@ public class Practice3 {
                     break;
                 case 3:
                     System.out.println("Digite el valor  A=excelente B= bueno C= regular D= malo E= pésimo");
-                    valor=teclado.nextLine();
+                    valor = teclado.nextLine().charAt(0);
                     oleOpalabra.cambiarPalabra(valor);
+                    break;
+                case 4:
 
             }
 
