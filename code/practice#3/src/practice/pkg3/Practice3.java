@@ -23,8 +23,11 @@ public class Practice3 {
         meses omeses = new meses();
         elevarNumeros oelevarNumeros = new elevarNumeros();
         letraOpalabra oleOpalabra = new letraOpalabra();
+        numeroRomano onumeroRomano = new numeroRomano();
+        regresoUnDia oregresoUnDia = new regresoUnDia();
+        diaLunes odialunes = new diaLunes();
 
-        int opt = 0, numero;
+        int opt = 0, numero, n, dia, dial, contador = 0, mes, año;
         char continuar, valor;
         boolean validar = true;
         double num;
@@ -35,9 +38,9 @@ public class Practice3 {
             System.out.println("1.saber el mes");
             System.out.println("2.Eleva o multiplica");
             System.out.println("3.Opciones");
-            System.out.println("4.");
-            System.out.println("5.");
-            System.out.println("6.");
+            System.out.println("4.Numero romano");
+            System.out.println("5.Cambiar el Año");
+            System.out.println("6.Dia Lunes");
             opt = Integer.parseInt(teclado.nextLine());
 
             switch (opt) {
@@ -58,6 +61,24 @@ public class Practice3 {
                     oleOpalabra.cambiarPalabra(valor);
                     break;
                 case 4:
+                    n = onumeroRomano.generarromano();
+                    System.out.println("El numero aleatoreo es:" + n);
+                    onumeroRomano.calculaRomano(n);
+                    break;
+                case 5:
+                    System.out.println("Digite el dia  / digite el mes / digite el año");
+                    System.out.println("Dia:");
+                    dia = Integer.parseInt(teclado.nextLine());
+                    System.out.println("Mes:");
+                    mes = Integer.parseInt(teclado.nextLine());
+                    System.out.println("Año:");
+                    año = Integer.parseInt(teclado.nextLine());
+                    oregresoUnDia.regresar(dia, mes, año);
+                    break;
+                case 6:
+                    System.out.println("Digite El dia");
+                    dial = Integer.parseInt(teclado.nextLine());
+                    odialunes.imprimeQuedia(dial, contador);
 
             }
 
