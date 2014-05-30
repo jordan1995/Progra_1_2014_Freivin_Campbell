@@ -25,7 +25,7 @@ public class Clase7 {
             System.out.println("Digite la opcion que desea");
             System.out.println("1.Ejemplo 1");
             System.out.println("2.Ejemplo 2");
-            System.out.println("3.Ejemplo 3");
+            //System.out.println("3.Ejemplo 3");
             option = oScanner.nextInt();
 
             switch (option) {
@@ -41,16 +41,19 @@ public class Clase7 {
                     ejercicio2 oejercicio2 = new ejercicio2();
                     oejercicio2.setCadena(oScanner.nextLine());
                     System.out.println("Imprime la mitad");
-                   System.out.println(oejercicio2.MitadCadena());
+                    System.out.println(oejercicio2.MitadCadena());
                     System.out.println("Imprime  el ultimo digito");
-                   System.out.println(oejercicio2.ultimovalor());
+                    System.out.println(oejercicio2.ultimovalor());
                     System.out.println("Imprime la cadedna alrevez");
-                   System.out.println(oejercicio2.Alrevez());
+                    System.out.println(oejercicio2.Alrevez());
+                    System.out.println("Imprime la cadedna con un guion");
+                    System.out.println(oejercicio2.Guion());
+                    System.out.println("Imprime solamente las vocales de la cadena");
+                    System.out.println(oejercicio2.Vocales());
+                    System.out.println("Imprime si es un Palindromo");
+                    System.out.println(oejercicio2.Palindromo());
+                    
                     break;
-                
-                    
-                    
-                    
 
             }
 
