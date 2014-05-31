@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package string.practice;
 
 /**
@@ -11,60 +10,55 @@ package string.practice;
  * @author Campbell
  */
 public class clsBuscarPalabra {
-    private String oracion, busqueda;
-    
-    
-    
-    public String buscarPa()
-            
-    {
-        int index =getOracion().indexOf(getBusqueda());
-        System.out.println(index);
-        index= getOracion().indexOf(getBusqueda(),index+1);
-        System.out.println(index);
-        
-        
-    return "";
+
+    private String sTexto, sTextoBuscado;
+
+    public void buscarPa() {
+        /*int index = getOracion().indexOf(getBusqueda());
+         System.out.println(index);
+         index = getOracion().indexOf(getBusqueda(), index + 1);
+         System.out.println(index);*/
+         // Texto
+
+	    // Texto que vamos a buscar
+        // Contador de ocurrencias 
+        int contador = 0;
+
+        while (getsTexto().indexOf(getsTextoBuscado()) > -1) {
+            setsTexto(getsTexto().substring(getsTexto().indexOf(getsTextoBuscado()) + getsTextoBuscado().length(), getsTexto().length()));
+            contador++;
+        }
+
+        System.out.println("la palabra que busco es :"+ getsTextoBuscado()+ "  y la cantidad es de : "+ contador);
+
     }
 
     /**
-     * @return the oracion
+     * @return the sTexto
      */
-    public String getOracion() {
-        return oracion;
+    public String getsTexto() {
+        return sTexto;
     }
 
     /**
-     * @param oracion the oracion to set
+     * @param sTexto the sTexto to set
      */
-    public void setOracion(String oracion) {
-        this.oracion = oracion;
+    public void setsTexto(String sTexto) {
+        this.sTexto = sTexto;
     }
 
     /**
-     * @return the busqueda
+     * @return the sTextoBuscado
      */
-    public String getBusqueda() {
-        return busqueda;
+    public String getsTextoBuscado() {
+        return sTextoBuscado;
     }
 
     /**
-     * @param busqueda the busqueda to set
+     * @param sTextoBuscado the sTextoBuscado to set
      */
-    public void setBusqueda(String busqueda) {
-        this.busqueda = busqueda;
+    public void setsTextoBuscado(String sTextoBuscado) {
+        this.sTextoBuscado = sTextoBuscado;
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-       
-    }
-    
-
+}
