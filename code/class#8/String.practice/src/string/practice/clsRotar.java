@@ -1,27 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package string.practice;
 
-/**
- *
- * @author Campbell
- */
 public class clsRotar {
 
-    private String palabra;
+    private String palabra; // creamos una variable la cual utilizaremos con set and get en el metodo
 
-    public String alRevez() {
-        String retorno = "";
-        for (int i = getPalabra().length() - 1; i >= 0; i--) {
+    public String alRevez() { // cramos el metodo con el cual llamaremos por medio de un puente en el main
+        String retorno = ""; // metodo string debemos retornar un string asi que inicializamos la variable que utilizaremos para reetirnar
+        for (int i = getPalabra().length() - 1; i >= 0; i--) {  // creamos un ciclo for para dar vuelta a esa palabra que queremos
             retorno += getPalabra().charAt(i);
 
         }
-        return retorno;
+        return retorno;  // aqui imprimimos la palabra la cual transformamos en el ciclo for ... =)
 
     }
+// set and get de la clase
 
     /**
      * @return the palabra

@@ -1,27 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package string.practice;
 
-/**
- *
- * @author Campbell
- */
 public class clsBuscarPalabra {
 
-    private String sTexto, sTextoBuscado;
+    private String sTexto, sTextoBuscado; // creamos las variables privadas y le sacamos el set y el get a cada una de ellas
 
-    public void buscarPa() {
-        /*int index = getOracion().indexOf(getBusqueda());
-         System.out.println(index);
-         index = getOracion().indexOf(getBusqueda(), index + 1);
-         System.out.println(index);*/
-         // Texto
+    public void buscarPa() { // cramos un metodo donde abra un contador de palabras y un ciclo donde donde comprueba si la palabra existe y le suma al contador
 
-	    // Texto que vamos a buscar
-        // Contador de ocurrencias 
         int contador = 0;
 
         while (getsTexto().indexOf(getsTextoBuscado()) > -1) {
@@ -29,7 +13,7 @@ public class clsBuscarPalabra {
             contador++;
         }
 
-        System.out.println("la palabra que busco es :"+ getsTextoBuscado()+ "  y la cantidad es de : "+ contador);
+        System.out.println("la palabra que busco es :" + getsTextoBuscado() + "  y la cantidad es de : " + contador);
 
     }
 
