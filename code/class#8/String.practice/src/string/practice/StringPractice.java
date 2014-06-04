@@ -42,6 +42,8 @@ public class StringPractice {
                     System.out.println("Digite la palabra que quiere buscar dentro de la oracion");
                     buscar.setsTextoBuscado(key.nextLine()); // mandamos la palabra que queremos buscas de igual forma con el set
                     buscar.buscarPa(); // imprimimos la palabra que buscamos y la cantidad en la oracion
+                    System.out.println("Daremos la palabra buscada con un guion para identificarla");
+                    System.out.print("-" ); buscar.buscarPaguion();
                     break;
 
             }
