@@ -1,24 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package clase7;
 
-/**
- *
- * @author Campbell
- */
 public class ejemplo3 {
-    private String cadena;
 
-    public String UltimoCadena() {
-        String retorno="";
-        for (int i = 0; i < getCadena().length()-1; i++) {
-        retorno+=getCadena().charAt(i); 
+    private String cadena;  // creamos variables string
+
+    public String UltimoCadena() {   // creamos el metodo que llamaremos como puente en el main
+        String retorno = "";  // inicializamos la variable del retorno del metodo
+        for (int i = 0; i < getCadena().length() - 1; i++) { // ciclo for para saber cual es el ultimo digito de la cadena digitada
+            retorno += getCadena().charAt(i);
         }
-return retorno;
+        return retorno;  /// como es un strin damos el retorno para que se imprima donde el metodo sea llamado 
     }
 
     /**
@@ -35,5 +26,4 @@ return retorno;
         this.cadena = cadena;
     }
 
-    
 }

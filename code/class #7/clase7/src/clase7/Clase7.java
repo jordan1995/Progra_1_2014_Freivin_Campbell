@@ -1,27 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package clase7;
 
-import java.util.Scanner;
+import java.util.Scanner; // import of scan
 
-/**
- *
- * @author Campbell
- */
 public class Clase7 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner oScanner = new Scanner(System.in);
-        int option = 0;
+        Scanner oScanner = new Scanner(System.in); // importamos el scan
+        int option = 0;  // variable int para opcion
 
-        do {
+        do {   // cracion del  ciclo para el menu
             System.out.println("Digite la opcion que desea");
             System.out.println("1.Ejemplo 1");
             System.out.println("2.Ejemplo 2");
@@ -29,13 +17,13 @@ public class Clase7 {
             option = oScanner.nextInt();
 
             switch (option) {
-                case 1:
+                case 1:  // al escoger la opcion 1 realizara todo el codigo a continuacion
                     System.out.println("Digite el correo a evluar");
                     oScanner = new Scanner(System.in);
                     ejercicio1 oejercicio1 = new ejercicio1(oScanner.nextLine());
                     System.out.println(oejercicio1.validarCorreo());
                     break;
-                case 2:
+                case 2:   // si escoje la opcio 2 realizara todo el codigo hasta llegar al brack 
                     System.out.println("Digite la cadena a evaluar");
                     oScanner = new Scanner(System.in);
                     ejercicio2 oejercicio2 = new ejercicio2();
@@ -52,12 +40,12 @@ public class Clase7 {
                     System.out.println(oejercicio2.Vocales());
                     System.out.println("Imprime si es un Palindromo");
                     System.out.println(oejercicio2.Palindromo());
-                    
+
                     break;
 
             }
 
-        } while (option <= 7);
+        } while (option < 3); // opciones llega hasta la 2 si se pasa el programa finalizara
 
     }
 
