@@ -36,7 +36,16 @@ public class Arreglos {
                         oejercicio1.AgregarSalario(teclado.nextDouble());
                     } System.out.println(oejercicio1.ImprimirSueldos());
                     break;
-                    default:
+                     case 2:
+                    ejercicio2 oejercicio2= new ejercicio2();
+                    for (int i = 0; i < 5; i++) {
+                        teclado = new Scanner(System.in);
+                        System.out.println("Digite el peso de la persona # " + (i+1));
+                        oejercicio2.Agregaraltura(teclado.nextFloat());
+                    } System.out.println(oejercicio2.ContarPersonas());
+                    break;
+                    
+                     default:
                        break;
             }
             
