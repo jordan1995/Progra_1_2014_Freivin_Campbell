@@ -17,7 +17,7 @@ public class ejercicio1 {
                 
                 salarios[i] = salario;// aqui el salario es agregado o asignado a cada arreglo
                 
-                break; // corte del metodo
+                break; // corte del if
             }
         }
     }
