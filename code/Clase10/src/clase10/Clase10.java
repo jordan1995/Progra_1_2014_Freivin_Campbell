@@ -6,7 +6,6 @@
 
 package clase10;
 
-import com.sun.org.apache.xalan.internal.xsltc.compiler.Constants;
 import java.util.Scanner;
 
 /**
