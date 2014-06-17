@@ -15,12 +15,28 @@ public class Clase11 {
         
         ejercicio1 oejercicio1= new ejercicio1();
         ejercicio2 oejercicio2=new ejercicio2();
+        practicaEnClase opracticaEnClase= new practicaEnClase();
         
-        oejercicio1.CargaMatriz();
-        oejercicio1.Imprimir();
         
-        oejercicio2.CargaMatriz();
-        oejercicio2.imprimirDiagonal();
+       // listo oejercicio1.CargaMatriz();
+       // listo oejercicio1.Imprimir();
+        
+        // listo oejercicio2.CargaMatriz();
+        // listo oejercicio2.imprimirDiagonal();
+        
+        // listo opracticaEnClase.CargaMatriz1();
+        // listo  opracticaEnClase.Imprimir1();
+        
+         // listo  opracticaEnClase.CargaMatriz2();
+         // listo  opracticaEnClase.cambiaMatriz2();
+         // listo  opracticaEnClase.imprimirMatriz2();
+        
+        opracticaEnClase.Cargamatriz3();
+        opracticaEnClase.BuscarVertices3();
+        
+        
+        
+        
         
     }
     
