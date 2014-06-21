@@ -35,7 +35,7 @@ private int[][] matriz;
                 {
                     System.out.print("_"+" ");
                 }
-                System.out.println();
+                System.out.print(" ");
                 }
             }
         }
