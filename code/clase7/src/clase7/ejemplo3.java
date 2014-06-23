@@ -9,7 +9,7 @@ public class ejemplo3 {
         for (int i = 0; i < getCadena().length() - 1; i++) { // ciclo for para saber cual es el ultimo digito de la cadena digitada
             retorno += getCadena().charAt(i);
         }
-        return retorno;  /// como es un strin damos el retorno para que se imprima donde el metodo sea llamado 
+        return retorno;  /// como es un string damos el retorno para que se imprima donde el metodo sea llamado 
     }
 
     /**

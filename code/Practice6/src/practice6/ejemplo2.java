@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Freivin CAmpbell<freivin12@hotail.com>
+ * @author Freivin CAmpbell<freivin12@hotmail.com>
  */
 public class ejemplo2 {
     private int[][] matriz;
