@@ -11,7 +11,7 @@ package ordenamientos;
  */
 public class Borbuja {
 
-    public int[] ordenamientoB(int arreglo[], String ordenamineto) {
+    public int[] ordenamientoB(int arreglo[]) {
         int indice;
         int indice2;
         int auxiliar;

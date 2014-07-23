@@ -6,6 +6,8 @@
 
 package clase17;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Freivin
@@ -17,6 +19,7 @@ public class Clase17 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        String palabra=" ";
         
         Lista oLista =new Lista();
         oLista.Insertar("Efren","20111-4");
@@ -25,7 +28,15 @@ public class Clase17 {
         oLista.Imprimir();
         
         oLista.EliminarPrimero();
+        //
         oLista.EliminarUltimo();
+        
+        Scanner oScanner= new Scanner(System.in);
+        //System.out.println("Digite el nodo que quiere eliminar de la lista");
+        palabra=oScanner.nextLine();
+//        oLista.EliminarMedio();
+        
+        
         
         
     }
